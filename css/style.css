@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--laizbek)
+}
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;1,200&family=Roboto:ital,wght@0,400;0,500;1,300&display=swap');
+
+:root{
+    --roboto:'Roboto', sans-serif;
+    --laizbek:'Bitter', serif;
+}
+
+
+/* boshladik */
+
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    width: 100%;
+    height: 90vh;
+    background-image: url(/img/headerbanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navigation{
+    width: 100%;
+    height: 11vh;
+    position: fixed;
+    background: linear-gradient(to right,rgb(255, 255, 255),rgb(252, 252, 6));
+    box-shadow: 5px 30px 50px rgb(0, 0, 0);
+    z-index: 1;
+}
+.nabvar{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 11vh;
+}
+.nav__logo{
+    width: 10%;
+    box-sizing: border-box;
+    margin-left: 1%;
+}
+.nav__lang {
+   width: 10%;
+   display: block;
+   border: none;
+   font-size: 2rem;
+}
+.navbar__icon .fa-bars{
+    display: none;
+}
+.navar__nav a{
+    margin-left: 9px;
+    margin-right: 9px;
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    font-weight: 500px;
+    color: black;
+    transform: 0.5s;
+}
+.nav__nav a:hover{
+    color: red;
+    letter-spacing: 5px;
+}
+.navbar__icon i{
+    margin-left: 8px;
+    margin-right: 8px;
+
+}
+.navbar__icon{
+    margin-right: 2%;
+}
+.baner h1{
+    position: absolute;
+    color: white;
+    font-size: 3rem;
+    top: 40%;
+    left: 20%;
+    letter-spacing: 0.2px;
+    animation: baner 6s linear infinite;
+}
+@keyframes baner{
+    0%,100%{
+    word-spacing: 0px;
+    opacity: 1;
+    }
+    50%{
+    word-spacing: 15px;
+    opacity: 0.5;
+    color: blue;
+    }
+}
+ 
+
+/* blog boshlandi */
+
+.blog{
+    width: 100%;
+    padding: 3rem;
+    background-color: rgb(255, 255, 255);
+
+}.blog .title{
+    text-align: center;
+    font-size: 1.7rem;
+    padding-bottom: 1%;
+    letter-spacing: 3px;
+    animation: animatsiy 2s linear infinite;
+}
+@keyframes animatsiy{
+    0%,100%{
+        color: red;
+    }
+    100%{
+        color: black;
+    }
+}
+.blog__content{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgb(7, 7, 7);
+    }
+.blog__item{
+    background-color: rgb(218, 216, 216);
+    padding: 8px 8px;
+    transform: 2s;
+    overflow: hidden;
+}    
+.blog__title{
+    text-align: center;
+    margin-top: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: aliceblue;
+}
+.blog__title i{
+    margin-top: 3%;
+}
+
+.blog__item:hover{
+    border: 1px solid red;
+}
+.blog__social.img{
+    position: absolute;
+    margin-top: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* about bplimi boshlandi */
+
+.about{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(236, 231, 231);
+   
+}
+
+.about .title{
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+    animation: animatsiya 2s linear infinite;
+    margin-top: 2%;
+    padding-top: 2%;
+}
+
+.about .title h3::after{
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid black;
+    width: 130px;
+    height: 5px;
+    right: 33%;
+    top: 50%;
+}
+.about .title h3::after{
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid black;
+    width: 130px;
+    height: 5px;
+    left: 33%;
+    top: 50%;
+}
+
+
+@keyframes animatsiya{
+    0%,100%{
+        color: red;
+    }
+    50%{
+        color: blue;
+    }
+}
+
+.about__content{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    padding-top: 2rem;
+    /* border-top: 1px solid black; */
+}
+.about__itme{
+    background-color: rgb(201, 199, 198);
+    padding: 8px 8px;
+    transition: s;
+}
+
+.about__itme:hover{
+    border: 2px solid rgb(240, 36, 36);
+}
+
+.about__title{
+    margin-top: 6%;
+    background-color: rgb(230, 236, 234);
+    text-align: center;
+}
+.about__title h4{
+    margin-bottom: 3%;
+}
+.about__title i{
+    margin-bottom: 3%;
+}
+.about__title p{
+    margin-bottom: 3%;
+}
+.about__title i:hover{
+    color: red;
+}
+.about button{
+    margin-left: 38%;
+    margin-top: 4%;
+    font-size: 2rem;
+    padding: 9px 9px;
+    background-color: rgb(173, 236, 223);
+    color: white;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    animation: button 1s linear infinite;
+}
+@keyframes button{
+    0%,100%{
+      color: rgb(9, 255, 0);
+    }
+    50%{
+        color: red;
+        opacity: 0.6;
+    }
+}
+/* yangi boloim news */
+
+.news{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(230, 227, 230);
+    padding: 2rem;
+    position: relative;
+}
+.news h5{
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    animation: yanglik 5s linear infinite;
+}
+@keyframes yanglik{
+    0%,100%{
+        color: rgb(0, 0, 0);
+    }
+    50%{
+        color: rgb(4, 0, 241);
+        opacity: 0.7;
+    }
+}
+.news h5::after{
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 4px;
+    border-bottom: 1px solid black;
+    right: 20%;
+    top: 48%;
+}
+.news h5::before{
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 4px;
+    border-bottom: 1px solid black;
+    left: 8%;
+    top: 48%;
+}
+
+/* footer bolimi */
+
+.footer{
+    width: 100%;
+    padding: 3rem 0;
+    background-color: rgb(40, 43, 46);
+}
+.footer__content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.footer__itme{
+    display: flex;
+    flex-direction: column;
+    line-height: 4.5rem;
+    cursor: pointer;
+}
+.footer__itme h2{
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    letter-spacing: 3px;
+}
+.footer__itme a{
+    color: rgb(255, 255, 255);
+    opacity: 0.5;
+    transition: 0.5s;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+
+}
+.footer__itme a:hover{
+    color: rgb(255, 255, 255);
+    opacity: 1;
+
+}
+
+copyright{
+    width: 100%;
+    background-color: #6e0c0c;
+}
+.copright__content{
+    display: flex;
+    height: 9vh;
+    justify-content: space-around;
+    align-items: center;
+
+}

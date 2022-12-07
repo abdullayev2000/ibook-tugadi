@@ -1,0 +1,43 @@
+@media only screen and (max-width:768px) {
+ body {
+   background-color: lightblue;
+ }
+ .nav__lang{
+    display: none;
+ }
+ .navar__nav {
+    display: none;
+ }
+ .about__content {
+   display: grid;
+   padding: 20px;
+   grid-template-columns: repeat(2, 1fr);
+}
+
+.blog__content{
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(2, 1fr) ;
+    
+ 
+    /* border-top: 1px solid black; */
+ }
+ .about button{
+       margin-left: 30%;
+       font-size: 1.5rem;
+
+    }
+    .footer__content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 30px;
+       text-align: center;
+        gap: 2rem;
+    }
+    .footer__itm{ 
+        align-items: center;
+        text-align: center;
+        
+        margin-left: 300px;
+    }
+}
